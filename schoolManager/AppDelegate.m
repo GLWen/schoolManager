@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "DemoViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -16,8 +18,50 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    DemoViewController *demoVC = [[DemoViewController alloc] init];
+    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:demoVC];
+    self.window.rootViewController = navi;
+    [self.window makeKeyAndVisible];
+
+    
+    
+    [self globalSetting];
     return YES;
+}
+#pragma mark - 设置全局变量
+- (void)globalSetting
+{
+    /// 导航栏两侧按钮颜色
+    [UINavigationBar appearance].tintColor = [UIColor whiteColor];
+    // 设置状态栏顶部字体颜色
+    [[UINavigationBar appearance] setBarStyle:(UIBarStyleBlack)];
+    // 设置状态栏样式
+    [UINavigationBar appearance].translucent = NO;
+    // 先自定义view
+    UIView *tmpView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 64)];
+    /// 绘制渐变颜色
+    CAGradientLayer *gradientLayer = [[CAGradientLayer alloc] init];
+    gradientLayer.colors = @[(__bridge id)[UIColor colorWithRed:60.0/255.0 green:186.0/255.0 blue:249.0/255.0 alpha:1.0].CGColor,(__bridge id)[UIColor colorWithRed:28.0/255.0 green:140.0/255.0 blue:245.0/255.0 alpha:1.0].CGColor];
+    gradientLayer.startPoint = CGPointMake(0, 0);
+    gradientLayer.endPoint = CGPointMake(1, 0);
+    gradientLayer.frame = CGRectMake(0, 0, CGRectGetWidth(tmpView.frame), CGRectGetHeight(tmpView.frame));
+    [tmpView.layer addSublayer:gradientLayer];
+    /// 再转换成背景图
+    UIGraphicsBeginImageContext(tmpView.bounds.size);
+    [tmpView.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    UIImage *tmpImage = [image resizableImageWithCapInsets:UIEdgeInsetsZero];
+    [[UINavigationBar appearance] setBackgroundImage:tmpImage forBarMetrics:UIBarMetricsDefault];
+    // 去除分割线
+    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
+    //设置全局导航栏标题颜色与字体大小
+    [[UINavigationBar appearance] setTitleTextAttributes:
+     @{NSFontAttributeName:[UIFont systemFontOfSize:18],
+       NSForegroundColorAttributeName:[UIColor whiteColor]}];
 }
 
 

@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		7E0C365E1E113E29002D730C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C365D1E113E29002D730C /* main.m */; };
 		7E0C36611E113E29002D730C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C36601E113E29002D730C /* AppDelegate.m */; };
-		7E0C36641E113E29002D730C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C36631E113E29002D730C /* ViewController.m */; };
-		7E0C36671E113E29002D730C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0C36651E113E29002D730C /* Main.storyboard */; };
 		7E0C36691E113E29002D730C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E0C36681E113E29002D730C /* Assets.xcassets */; };
-		7E0C366C1E113E29002D730C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0C366A1E113E29002D730C /* LaunchScreen.storyboard */; };
 		7E0C36771E113E29002D730C /* schoolManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C36761E113E29002D730C /* schoolManagerTests.m */; };
 		7E0C36821E113E29002D730C /* schoolManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C36811E113E29002D730C /* schoolManagerUITests.m */; };
+		7E0C36911E113EEC002D730C /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C36901E113EEC002D730C /* DemoViewController.m */; };
+		7E0C369B1E114186002D730C /* GLSchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C36981E114186002D730C /* GLSchoolViewController.m */; };
+		7E0C369C1E114186002D730C /* GLSelectSchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C369A1E114186002D730C /* GLSelectSchoolViewController.m */; };
+		7E0C369E1E114197002D730C /* schoolName.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E0C369D1E114197002D730C /* schoolName.plist */; };
+		7E0C36A51E114233002D730C /* GLLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C36A01E114233002D730C /* GLLocation.m */; };
+		7E0C36A61E114233002D730C /* GLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C36A21E114233002D730C /* GLTextField.m */; };
+		7E0C36A71E114233002D730C /* GLTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C36A41E114233002D730C /* GLTool.m */; };
+		7E0C36AF1E114258002D730C /* GLSchoolSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C36AB1E114258002D730C /* GLSchoolSearchBar.m */; };
+		7E0C36B01E114258002D730C /* GLSchoolSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C36AD1E114258002D730C /* GLSchoolSearchView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +45,7 @@
 		7E0C365D1E113E29002D730C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7E0C365F1E113E29002D730C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7E0C36601E113E29002D730C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7E0C36621E113E29002D730C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7E0C36631E113E29002D730C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		7E0C36661E113E29002D730C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E0C36681E113E29002D730C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7E0C366B1E113E29002D730C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E0C366D1E113E29002D730C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E0C36721E113E29002D730C /* schoolManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = schoolManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E0C36761E113E29002D730C /* schoolManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = schoolManagerTests.m; sourceTree = "<group>"; };
@@ -51,6 +53,23 @@
 		7E0C367D1E113E29002D730C /* schoolManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = schoolManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E0C36811E113E29002D730C /* schoolManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = schoolManagerUITests.m; sourceTree = "<group>"; };
 		7E0C36831E113E29002D730C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E0C368F1E113EEC002D730C /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		7E0C36901E113EEC002D730C /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		7E0C36971E114186002D730C /* GLSchoolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLSchoolViewController.h; sourceTree = "<group>"; };
+		7E0C36981E114186002D730C /* GLSchoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLSchoolViewController.m; sourceTree = "<group>"; };
+		7E0C36991E114186002D730C /* GLSelectSchoolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLSelectSchoolViewController.h; sourceTree = "<group>"; };
+		7E0C369A1E114186002D730C /* GLSelectSchoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLSelectSchoolViewController.m; sourceTree = "<group>"; };
+		7E0C369D1E114197002D730C /* schoolName.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = schoolName.plist; sourceTree = "<group>"; };
+		7E0C369F1E114233002D730C /* GLLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLLocation.h; sourceTree = "<group>"; };
+		7E0C36A01E114233002D730C /* GLLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLLocation.m; sourceTree = "<group>"; };
+		7E0C36A11E114233002D730C /* GLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTextField.h; sourceTree = "<group>"; };
+		7E0C36A21E114233002D730C /* GLTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLTextField.m; sourceTree = "<group>"; };
+		7E0C36A31E114233002D730C /* GLTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTool.h; sourceTree = "<group>"; };
+		7E0C36A41E114233002D730C /* GLTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLTool.m; sourceTree = "<group>"; };
+		7E0C36AA1E114258002D730C /* GLSchoolSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLSchoolSearchBar.h; sourceTree = "<group>"; };
+		7E0C36AB1E114258002D730C /* GLSchoolSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLSchoolSearchBar.m; sourceTree = "<group>"; };
+		7E0C36AC1E114258002D730C /* GLSchoolSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLSchoolSearchView.h; sourceTree = "<group>"; };
+		7E0C36AD1E114258002D730C /* GLSchoolSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLSchoolSearchView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +120,12 @@
 		7E0C365B1E113E29002D730C /* schoolManager */ = {
 			isa = PBXGroup;
 			children = (
+				7E0C36921E11415D002D730C /* GLSchoolManger */,
 				7E0C365F1E113E29002D730C /* AppDelegate.h */,
 				7E0C36601E113E29002D730C /* AppDelegate.m */,
-				7E0C36621E113E29002D730C /* ViewController.h */,
-				7E0C36631E113E29002D730C /* ViewController.m */,
-				7E0C36651E113E29002D730C /* Main.storyboard */,
+				7E0C368F1E113EEC002D730C /* DemoViewController.h */,
+				7E0C36901E113EEC002D730C /* DemoViewController.m */,
 				7E0C36681E113E29002D730C /* Assets.xcassets */,
-				7E0C366A1E113E29002D730C /* LaunchScreen.storyboard */,
 				7E0C366D1E113E29002D730C /* Info.plist */,
 				7E0C365C1E113E29002D730C /* Supporting Files */,
 			);
@@ -138,6 +156,60 @@
 				7E0C36831E113E29002D730C /* Info.plist */,
 			);
 			path = schoolManagerUITests;
+			sourceTree = "<group>";
+		};
+		7E0C36921E11415D002D730C /* GLSchoolManger */ = {
+			isa = PBXGroup;
+			children = (
+				7E0C36931E11415D002D730C /* Controller */,
+				7E0C36941E11415D002D730C /* Source */,
+				7E0C36951E11415D002D730C /* Tool */,
+				7E0C36961E11415D002D730C /* View */,
+			);
+			path = GLSchoolManger;
+			sourceTree = "<group>";
+		};
+		7E0C36931E11415D002D730C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7E0C36971E114186002D730C /* GLSchoolViewController.h */,
+				7E0C36981E114186002D730C /* GLSchoolViewController.m */,
+				7E0C36991E114186002D730C /* GLSelectSchoolViewController.h */,
+				7E0C369A1E114186002D730C /* GLSelectSchoolViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7E0C36941E11415D002D730C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				7E0C369D1E114197002D730C /* schoolName.plist */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		7E0C36951E11415D002D730C /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				7E0C369F1E114233002D730C /* GLLocation.h */,
+				7E0C36A01E114233002D730C /* GLLocation.m */,
+				7E0C36A11E114233002D730C /* GLTextField.h */,
+				7E0C36A21E114233002D730C /* GLTextField.m */,
+				7E0C36A31E114233002D730C /* GLTool.h */,
+				7E0C36A41E114233002D730C /* GLTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		7E0C36961E11415D002D730C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7E0C36AA1E114258002D730C /* GLSchoolSearchBar.h */,
+				7E0C36AB1E114258002D730C /* GLSchoolSearchBar.m */,
+				7E0C36AC1E114258002D730C /* GLSchoolSearchView.h */,
+				7E0C36AD1E114258002D730C /* GLSchoolSearchView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,9 +321,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E0C366C1E113E29002D730C /* LaunchScreen.storyboard in Resources */,
 				7E0C36691E113E29002D730C /* Assets.xcassets in Resources */,
-				7E0C36671E113E29002D730C /* Main.storyboard in Resources */,
+				7E0C369E1E114197002D730C /* schoolName.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,9 +347,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E0C36641E113E29002D730C /* ViewController.m in Sources */,
+				7E0C36AF1E114258002D730C /* GLSchoolSearchBar.m in Sources */,
+				7E0C36911E113EEC002D730C /* DemoViewController.m in Sources */,
+				7E0C36A61E114233002D730C /* GLTextField.m in Sources */,
+				7E0C369B1E114186002D730C /* GLSchoolViewController.m in Sources */,
 				7E0C36611E113E29002D730C /* AppDelegate.m in Sources */,
+				7E0C36A71E114233002D730C /* GLTool.m in Sources */,
 				7E0C365E1E113E29002D730C /* main.m in Sources */,
+				7E0C36B01E114258002D730C /* GLSchoolSearchView.m in Sources */,
+				7E0C369C1E114186002D730C /* GLSelectSchoolViewController.m in Sources */,
+				7E0C36A51E114233002D730C /* GLLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,25 +390,6 @@
 			targetProxy = 7E0C367E1E113E29002D730C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		7E0C36651E113E29002D730C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7E0C36661E113E29002D730C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7E0C366A1E113E29002D730C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7E0C366B1E113E29002D730C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7E0C36841E113E29002D730C /* Debug */ = {
@@ -425,8 +484,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = KFA3QPDKRY;
 				INFOPLIST_FILE = schoolManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wenguoli.schoolManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -437,8 +498,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = KFA3QPDKRY;
 				INFOPLIST_FILE = schoolManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wenguoli.schoolManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
